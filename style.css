@@ -40,26 +40,32 @@ img{ max-width:100%; display:block; }
 .hero-visual img{ max-width:560px; opacity:0; transform:scale(.96); animation:fadeZoom .8s ease-out .12s forwards; }
 @keyframes fadeZoom{ to{ opacity:1; transform:scale(1);} }
 
-<!-- CTA STRIP -->
-<section class="cta-strip pro" aria-label="Teklif Çağrısı">
-  <div class="cta-pro-inner">
-    <h3 class="cta-title">
-      Projenize <span>48 saat</span> içinde özel teklif alın
-    </h3>
-    <p class="cta-sub">Kısa formu doldurun, net ve şeffaf bir teklif hazırlayalım.</p>
+/* --- CTA PRO: her iki markup'ı da kapsa --- */
 
-    <div class="cta-actions">
-      <a href="#iletisim" class="cta-btn">Teklif Al</a>
-      <a href="#iletisim" class="cta-link">Sizi arayalım</a>
-    </div>
+/* daha önce: .cta-strip.pro { ... } */
+.cta-strip.pro,
+.cta-strip{
+  position:relative; isolation:isolate; padding:72px 16px; color:#fff;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(255,255,255,.16), transparent 60%),
+    radial-gradient(900px 420px at 100% 110%, rgba(0,0,0,.12), transparent 60%),
+    linear-gradient(100deg,#6B3CE9 0%, #b455b9 40%, #f07b67 85%, #f77c3b 100%);
+  overflow:hidden;
+  z-index:0;
+  padding-bottom:88px;
+}
 
-    <ul class="cta-badges" aria-label="Güvence rozetleri">
-      <li>Ücretsiz keşif</li>
-      <li>24 saatte dönüş</li>
-      <li>Gizlilik taahhüdü</li>
-    </ul>
-  </div>
-</section>
+/* daha önce: .cta-pro-inner { ... } */
+.cta-pro-inner,
+.cta-inner{
+  max-width:920px; margin:0 auto; text-align:center; position:relative; z-index:1;
+}
+
+/* başlık & alt metin */
+.cta-title{ margin:0 0 10px; font-size:clamp(24px,2.8vw,34px); font-weight:900; letter-spacing:-.01em; }
+.cta-title span{ text-decoration:underline; text-decoration-thickness:.12em; text-underline-offset:.18em; }
+.cta-sub{ margin:0 auto 20px; max-width:640px; opacity:.
+
 
 
 /* Referanslar */
