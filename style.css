@@ -40,54 +40,27 @@ img{ max-width:100%; display:block; }
 .hero-visual img{ max-width:560px; opacity:0; transform:scale(.96); animation:fadeZoom .8s ease-out .12s forwards; }
 @keyframes fadeZoom{ to{ opacity:1; transform:scale(1);} }
 
-/* CTA PRO (tek tanım, stacking fix’li) */
-.cta-strip.pro{
-  position:relative; isolation:isolate; padding:72px 16px; color:#fff;
-  background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(255,255,255,.16), transparent 60%),
-    radial-gradient(900px 420px at 100% 110%, rgba(0,0,0,.12), transparent 60%),
-    linear-gradient(100deg,#6B3CE9 0%, #b455b9 40%, #f07b67 85%, #f77c3b 100%);
-  overflow:hidden;
-  z-index:0;                 /* referansları örtmesin */
-  padding-bottom:88px;       /* altta nefes payı */
-}
-.cta-strip.pro::after{
-  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='%23ffffff' fill-opacity='.05'%3E%3Ccircle cx='10' cy='10' r='1'/%3E%3Ccircle cx='90' cy='60' r='1'/%3E%3Ccircle cx='140' cy='120' r='1'/%3E%3Ccircle cx='50' cy='130' r='1'/%3E%3C/g%3E%3C/svg%3E");
-  opacity:.25; mix-blend-mode:screen;
-}
-.cta-pro-inner{ max-width:920px; margin:0 auto; text-align:center; position:relative; z-index:1; }
-.cta-title{ margin:0 0 10px; font-size:clamp(24px,2.8vw,34px); font-weight:900; letter-spacing:-.01em; }
-.cta-title span{ text-decoration:underline; text-decoration-thickness:.12em; text-underline-offset:.18em; }
-.cta-sub{ margin:0 auto 20px; max-width:640px; opacity:.92; }
-.cta-actions{ display:flex; gap:14px; justify-content:center; align-items:center; flex-wrap:wrap; }
-.cta-btn{ display:inline-flex; align-items:center; gap:8px; padding:12px 18px; border-radius:999px; font-weight:800; color:#111; background:#fff; text-decoration:none; box-shadow:0 12px 26px rgba(0,0,0,.16), 0 8px 22px rgba(247,124,59,.18); transform:translateY(0); transition:transform .15s, box-shadow .15s, filter .2s; border:0; }
-.cta-btn:hover{ transform:translateY(-1px); filter:brightness(1.02); }
-.cta-btn:active{ transform:translateY(0); box-shadow:0 8px 16px rgba(0,0,0,.14); }
-.cta-link{ color:#fff; opacity:.92; text-decoration:none; font-weight:700; }
-.cta-link:hover{ opacity:1; text-decoration:underline; }
+<!-- CTA STRIP -->
+<section class="cta-strip pro" aria-label="Teklif Çağrısı">
+  <div class="cta-pro-inner">
+    <h3 class="cta-title">
+      Projenize <span>48 saat</span> içinde özel teklif alın
+    </h3>
+    <p class="cta-sub">Kısa formu doldurun, net ve şeffaf bir teklif hazırlayalım.</p>
 
-/* CTA Rozetleri – marker’lar tamamen kapalı */
-ul, ol{ list-style:none !important; margin:0; padding:0; }
-li::marker{ content:'' !important; }
-.cta-badges{
-  display:flex; flex-wrap:wrap; gap:14px; justify-content:center;
-  margin:18px 0 0; font-size:14px; opacity:.95;
-}
-.cta-badges li{
-  display:inline-flex; align-items:center;
-  padding:6px 10px; border-radius:999px;
-  background:rgba(255,255,255,.12);
-  border:1px solid rgba(255,255,255,.22);
-  backdrop-filter:blur(2px);
-}
+    <div class="cta-actions">
+      <a href="#iletisim" class="cta-btn">Teklif Al</a>
+      <a href="#iletisim" class="cta-link">Sizi arayalım</a>
+    </div>
 
-/* Referanslar CTA’nın üstünde kalsın */
-.references{ position:relative; z-index:2; }
+    <ul class="cta-badges" aria-label="Güvence rozetleri">
+      <li>Ücretsiz keşif</li>
+      <li>24 saatte dönüş</li>
+      <li>Gizlilik taahhüdü</li>
+    </ul>
+  </div>
+</section>
 
-@media (max-width:640px){
-  .cta-strip.pro{ padding-bottom:64px; }
-}
 
 /* Referanslar */
 .references{ position:relative; overflow:hidden; background:var(--bg-soft); padding:40px 0; text-align:center; }
