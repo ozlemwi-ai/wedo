@@ -297,3 +297,73 @@ address{ font-style:normal; }
 .hero-text, .hero-visual { opacity:0; transform:translateY(20px); animation:fadeUp .8s ease forwards; }
 .hero-visual { animation-delay:.3s; }
 @keyframes fadeUp { to { opacity:1; transform:none; } }
+/* === ÇALIŞMALARIMIZ / GALERİ === */
+.gallery-section{
+  padding:64px 16px;
+  background:#f7f8fa;
+  text-align:center;
+}
+.gallery-section h2{
+  margin:0 0 8px;
+  font-size:clamp(22px,3.4vw,32px);
+}
+.gallery-section p{
+  margin:0 auto 28px;
+  color:#555;
+  max-width:760px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:24px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.gallery-item{
+  position:relative;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 12px 28px rgba(0,0,0,.06);
+  overflow:hidden;
+  aspect-ratio:4/3;                /* düzgün oran */
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transform:scale(1.02);
+  transition:transform .35s ease;
+}
+.gallery-item:hover img{ transform:scale(1.06); }
+
+.gallery-caption{
+  position:absolute;
+  left:0; right:0; bottom:0;
+  padding:12px 14px;
+  font-weight:700;
+  font-size:14px;
+  color:#111;
+  background:linear-gradient(180deg,transparent 0%, rgba(255,255,255,.92) 60%, #fff 100%);
+  text-align:left;
+}
+
+/* Görsel yüklenmezse nazik fallback */
+.gallery-item.is-error{
+  display:grid;
+  place-items:center;
+  background:
+    repeating-linear-gradient(45deg,#f4f4f6 0 8px,#efeff5 8px 16px);
+}
+.gallery-item.is-error::after{
+  content:"Görsel bulunamadı";
+  color:#666;
+  font-weight:600;
+  background:rgba(255,255,255,.9);
+  padding:6px 10px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}

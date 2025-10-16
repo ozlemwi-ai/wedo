@@ -254,45 +254,43 @@
       </div>
     </section>
 
-    <!-- YAPTIĞIMIZ İŞLER / ÇALIŞMALARIMIZ (Galeri) -->
-    <section class="gallery-section" id="galeri" aria-label="Yaptığımız İşler">
-      <h2>Yaptığımız İşlerden Bazıları</h2>
-      <p>Markalara özel ürettiğimiz yaratıcı işlerimizden seçkiler.</p>
+    <!-- ÇALIŞMALARIMIZ / GALERİ -->
+<section class="gallery-section" id="calismalarimiz" aria-label="Yaptığımız İşler">
+  <h2>Yaptığımız İşlerden Bazıları</h2>
+  <p>Markalara özel ürettiğimiz yaratıcı işlerimizden seçkiler.</p>
 
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="calisma1.jpg" alt="Royal Canin tabela uygulaması">
-          <div class="gallery-caption">Royal Canin - Tabela Uygulaması</div>
-        </div>
+  <div class="gallery-grid">
+    <figure class="gallery-item">
+      <img src="galeri/royal-canin.jpg" alt="Royal Canin tabela uygulaması" loading="lazy">
+      <figcaption class="gallery-caption">Royal Canin – Tabela Uygulaması</figcaption>
+    </figure>
 
-        <div class="gallery-item">
-          <img src="calisma2.jpg" alt="Tuborg fuar stand tasarımı">
-          <div class="gallery-caption">Tuborg - Fuar Stand Tasarımı</div>
-        </div>
+    <figure class="gallery-item">
+      <img src="galeri/tuborg-stand.jpg" alt="Tuborg fuar stand tasarımı" loading="lazy">
+      <figcaption class="gallery-caption">Tuborg – Fuar Stand Tasarımı</figcaption>
+    </figure>
 
-        <div class="gallery-item">
-          <img src="calisma3.jpg" alt="Watsons vitrin görsel tasarımı">
-          <div class="gallery-caption">Watsons - Vitrin Görsel Tasarımı</div>
-        </div>
+    <figure class="gallery-item">
+      <img src="galeri/watsons-vitrin.jpg" alt="Watsons vitrin görsel tasarımı" loading="lazy">
+      <figcaption class="gallery-caption">Watsons – Vitrin Görsel Tasarımı</figcaption>
+    </figure>
 
-        <div class="gallery-item">
-          <img src="calisma4.jpg" alt="Illy lansman afişi">
-          <div class="gallery-caption">Illy - Lansman Afişi</div>
-        </div>
+    <figure class="gallery-item">
+      <img src="galeri/illy-afis.jpg" alt="Illy lansman afişi" loading="lazy">
+      <figcaption class="gallery-caption">Illy – Lansman Afişi</figcaption>
+    </figure>
 
-        <div class="gallery-item">
-          <img src="calisma5.jpg" alt="Dardanel araç giydirme">
-          <div class="gallery-caption">Dardanel - Araç Giydirme</div>
-        </div>
+    <figure class="gallery-item">
+      <img src="galeri/dardanel-arac.jpg" alt="Dardanel araç giydirme" loading="lazy">
+      <figcaption class="gallery-caption">Dardanel – Araç Giydirme</figcaption>
+    </figure>
 
-        <div class="gallery-item">
-          <img src="calisma6.jpg" alt="Red Bull dijital kampanya">
-          <div class="gallery-caption">Red Bull - Dijital Kampanya</div>
-        </div>
-      </div>
-    </section>
-
-  </main>
+    <figure class="gallery-item">
+      <img src="galeri/redbull-dijital.jpg" alt="Red Bull dijital kampanya" loading="lazy">
+      <figcaption class="gallery-caption">Red Bull – Dijital Kampanya</figcaption>
+    </figure>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="site-footer" aria-labelledby="footer-title">
@@ -421,5 +419,16 @@
       window.addEventListener('resize', onScroll);
     })();
   </script>
+  <script>
+  // Görsel yüklenmezse kartı kibarca fallback'e al
+  document.querySelectorAll('.gallery-item img').forEach(function(img){
+    img.addEventListener('error', function(){
+      const card = img.closest('.gallery-item');
+      if(card){ card.classList.add('is-error'); }
+      img.remove();
+    }, { once: true });
+  });
+</script>
+
 </body>
 </html>
