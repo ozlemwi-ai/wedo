@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Güncellenmiş CSS’i linkleyin -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,429 +28,238 @@
       <span></span><span></span><span></span>
     </label>
 
-  <nav class="menu">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
-    <li><a href="#referanslar">Referanslarımız</a></li>
-    <li><a href="#calismalarimiz">Çalışmalarımız</a></li>
-    <li><a href="#process">Süreç</a></li>
-    <li class="only-mobile"><a class="btn-primary" href="#iletisim">Bize Ulaşın</a></li>
-  </ul>
-</nav>
-
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+        <li><a href="#referanslar">Referanslarımız</a></li>
+        <li><a href="#calismalarimiz">Çalışmalarımız</a></li>
+        <li><a href="#process">Süreç</a></li>
+        <li class="only-mobile"><a class="btn-primary" href="#iletisim">Bize Ulaşın</a></li>
+      </ul>
+    </nav>
 
     <a href="#iletisim" class="btn-primary cta only-desktop">Bize Ulaşın</a>
   </header>
 
-  <!-- TÜM İÇERİK -->
-  <main id="content">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text reveal">
+      <h1>
+        İleriye Dönük, <span class="highlight-orange">Yenilikçi</span><br/>
+        Ve <span class="highlight-orange">Yaratıcı</span> Çözümler İçin
+        <span class="highlight-purple">Wedo.</span>
+      </h1>
+      <p>
+        Müşterilerimizin beklentilerini aşmak için en son teknoloji ve en yaratıcı
+        fikirlerle ileriye bakıyoruz. Geleceği birlikte şekillendirelim.
+      </p>
+      <a class="btn-primary" href="#hizmetlerimiz">Hizmetlerimizi Keşfet</a>
+    </div>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text reveal">
-        <h1>
-          İleriye Dönük, <span class="highlight-orange">Yenilikçi</span><br/>
-          Ve <span class="highlight-orange">Yaratıcı</span> Çözümler İçin
-          <span class="highlight-purple">Wedo.</span>
-        </h1>
-        <p>
-          Müşterilerimizin beklentilerini aşmak için en son teknoloji ve en yaratıcı
-          fikirlerle ileriye bakıyoruz. Geleceği birlikte şekillendirelim.
-        </p>
-        <a class="btn-primary" href="#hizmetlerimiz">Hizmetlerimizi Keşfet</a>
-      </div>
+    <div class="hero-visual reveal">
+      <img src="renkler.png" alt="Wedo renkli görsel" loading="eager">
+    </div>
+  </section>
 
-      <div class="hero-visual reveal">
-        <img src="renkler.png" alt="Wedo renkli görsel" loading="eager">
-      </div>
-    </section>
-
+  <!-- CTA STRIP -->
   <section class="cta-strip pro" aria-label="Teklif Al">
-  <div class="cta-pro-inner">
-    <h3 class="cta-title">Projenize <span>48 saat</span> içinde özel teklif alın</h3>
-    <p class="cta-sub">Kısa formu doldurun, size özel teklifimizi iletelim.</p>
+    <div class="cta-pro-inner">
+      <h3 class="cta-title">Projenize <span>48 saat</span> içinde özel teklif alın</h3>
+      <p class="cta-sub">Kısa formu doldurun, size özel teklifimizi iletelim.</p>
 
-    <div class="cta-actions">
-      <a href="#iletisim" class="cta-btn">Teklif Al</a>
-      <a href="#iletisim" class="cta-link">Sizi Arayalım</a>
+      <div class="cta-actions">
+        <a href="#iletisim" class="cta-btn">Teklif Al</a>
+        <a href="#iletisim" class="cta-link">Sizi Arayalım</a>
+      </div>
+
+      <ul class="cta-badges">
+        <li>Ücretsiz keşif</li>
+        <li>24 saatte dönüş</li>
+        <li>Gizlilik taahhüdü</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- REFERANSLAR -->
+  <section class="references" id="referanslar" aria-label="Referanslarımız">
+    <h2>Referanslarımız</h2>
+    <div class="logos">
+      <div class="logos-track">
+        <img src="Royal-Canin-Logo.svg" alt="Royal Canin">
+        <img src="Tuborg-Logo.png" alt="Tuborg">
+        <img src="watsons-logo.png" alt="Watsons">
+        <img src="Yesilay-logo.jpg" alt="Yeşilay">
+        <img src="gaming_logo.svg" alt="Gaming.Gen">
+        <img src="dardanel-logo.png" alt="Dardanel">
+        <img src="halkbank-logo.jpg" alt="Halkbank">
+        <img src="Illy-logo.png" alt="Illy">
+        <img src="Monin-Logo.png" alt="Monin">
+        <img src="Red-Bull-Logo.png" alt="Red Bull">
+        <!-- loop -->
+        <img src="Royal-Canin-Logo.svg" alt="Royal Canin">
+        <img src="Tuborg-Logo.png" alt="Tuborg">
+        <img src="watsons-logo.png" alt="Watsons">
+        <img src="Yesilay-logo.jpg" alt="Yeşilay">
+        <img src="gaming_logo.svg" alt="Gaming.Gen">
+        <img src="dardanel-logo.png" alt="Dardanel">
+        <img src="halkbank-logo.jpg" alt="Halkbank">
+        <img src="Illy-logo.png" alt="Illy">
+        <img src="Monin-Logo.png" alt="Monin">
+        <img src="Red-Bull-Logo.png" alt="Red Bull">
+      </div>
+    </div>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section class="services" id="hizmetlerimiz">
+    <h2>Hizmetlerimiz</h2>
+
+    <div class="services-grid">
+      <article class="service-box reveal">
+        <div class="icon" aria-hidden="true">🪧</div>
+        <h3>Tabela</h3>
+        <p>Hedef kitlenizle buluşan, paylaşılası ve akılda kalıcı içerikler üretiyoruz.</p>
+      </article>
+
+      <article class="service-box reveal">
+        <div class="icon">🎨</div>
+        <h3>Tasarım</h3>
+        <p>Markanızı yükseltecek yaratıcı görsel tasarımlar. İhtiyacınıza özel tasarım hizmetleri.</p>
+      </article>
+
+      <article class="service-box reveal">
+        <div class="icon">📰</div>
+        <h3>Matbaa</h3>
+        <p>Kaliteli baskı, hızlı teslim. Kurumsal kimliğinizle uyumlu tüm matbaa ihtiyaçlarınız tek noktada.</p>
+      </article>
+
+      <article class="service-box reveal">
+        <div class="icon">💻</div>
+        <h3>Web Tasarımı</h3>
+        <p>Marka kimliğinize uygun, modern ve kullanıcı dostu web siteleri tasarlıyor ve geliştiriyoruz.</p>
+      </article>
+
+      <article class="service-box reveal">
+        <div class="icon">🎬</div>
+        <h3>Video Kurgu</h3>
+        <p>Fikirden yayına kadar profesyonel kurgu ve post-prodüksiyon çözümleri.</p>
+      </article>
+
+      <article class="service-box reveal">
+        <div class="icon">📱</div>
+        <h3>Sosyal Medya</h3>
+        <p>Rakiplerden ayrışan, hedef kitleyle bağ kuran yaratıcı sosyal medya stratejileri.</p>
+      </article>
     </div>
 
-    <ul class="cta-badges">
-      <li>Ücretsiz keşif</li>
-      <li>24 saatte dönüş</li>
-      <li>Gizlilik taahhüdü</li>
-    </ul>
-  </div>
-</section>
+    <a href="#iletisim" class="btn-orange">Bize Ulaşın</a>
+  </section>
 
+  <!-- PROCESS -->
+  <section id="process" class="alt-timeline" aria-labelledby="timeline-title">
+    <div class="alt-container">
+      <header class="alt-head">
+        <h2 id="timeline-title">Projelerimizde İzlediğimiz Yol</h2>
+        <p class="alt-sub">Markanızın ihtiyaçlarına göre net, ölçülebilir ve şeffaf süreç.</p>
+      </header>
 
-    <!-- REFERANSLAR -->
-    <section class="references" id="referanslar" aria-label="Referanslarımız">
-      <h2>Referanslarımız</h2>
-      <div class="logos">
-        <div class="logos-track">
-          <img src="Royal-Canin-Logo.svg" alt="Royal Canin">
-          <img src="Tuborg-Logo.png" alt="Tuborg">
-          <img src="watsons-logo.png" alt="Watsons">
-          <img src="Yesilay-logo.jpg" alt="Yeşilay">
-          <img src="gaming_logo.svg" alt="Gaming.Gen">
-          <img src="dardanel-logo.png" alt="Dardanel">
-          <img src="halkbank-logo.jpg" alt="Halkbank">
-          <img src="Illy-logo.png" alt="Illy">
-          <img src="Monin-Logo.png" alt="Monin">
-          <img src="Red-Bull-Logo.png" alt="Red Bull">
-          <!-- loop -->
-          <img src="Royal-Canin-Logo.svg" alt="Royal Canin">
-          <img src="Tuborg-Logo.png" alt="Tuborg">
-          <img src="watsons-logo.png" alt="Watsons">
-          <img src="Yesilay-logo.jpg" alt="Yeşilay">
-          <img src="gaming_logo.svg" alt="Gaming.Gen">
-          <img src="dardanel-logo.png" alt="Dardanel">
-          <img src="halkbank-logo.jpg" alt="Halkbank">
-          <img src="Illy-logo.png" alt="Illy">
-          <img src="Monin-Logo.png" alt="Monin">
-          <img src="Red-Bull-Logo.png" alt="Red Bull">
-        </div>
-      </div>
-    </section>
-
-    <!-- HİZMETLER -->
-    <section class="services" id="hizmetlerimiz">
-      <h2>Hizmetlerimiz</h2>
-
-      <div class="services-grid">
-        <article class="service-box reveal">
-          <div class="icon" aria-hidden="true">🪧</div>
-          <h3>Tabela</h3>
-          <p>Hedef kitlenizle buluşan, paylaşılası ve akılda kalıcı içerikler üretiyoruz; organik trafiği artırıyoruz.</p>
-        </article>
-
-        <article class="service-box reveal">
-          <div class="icon">🎨</div>
-          <h3>Tasarım</h3>
-          <p>Markanızı yükseltecek yaratıcı görsel tasarımlar. İhtiyacınıza özel tasarım hizmetleri.</p>
-        </article>
-
-        <article class="service-box reveal">
-          <div class="icon">📰</div>
-          <h3>Matbaa</h3>
-          <p>Kaliteli baskı, hızlı teslim. Kurumsal kimliğinizle uyumlu tüm matbaa ihtiyaçlarınız tek noktada.</p>
-        </article>
-
-        <article class="service-box reveal">
-          <div class="icon">💻</div>
-          <h3>Web Tasarımı</h3>
-          <p>Marka kimliğinize uygun, modern ve kullanıcı dostu web siteleri tasarlıyor ve geliştiriyoruz.</p>
-        </article>
-
-        <article class="service-box reveal">
-          <div class="icon">🎬</div>
-          <h3>Video Kurgu</h3>
-          <p>Fikirden yayın aşamasına kadar profesyonel kurgu ve post-prodüksiyon çözümleri.</p>
-        </article>
-
-        <article class="service-box reveal">
-          <div class="icon">📱</div>
-          <h3>Sosyal Medya</h3>
-          <p>Rakiplerden ayrışan, hedef kitleyle bağ kuran yaratıcı sosyal medya stratejileri ve içerikleri.</p>
-        </article>
-      </div>
-
-      <a href="#iletisim" class="btn-orange">Bize Ulaşın</a>
-    </section>
-
-    <!-- TIMELINE -->
-    <section id="process" class="alt-timeline" aria-labelledby="timeline-title">
-      <div class="alt-container">
-        <header class="alt-head">
-          <h2 id="timeline-title">Projelerimizde İzlediğimiz Yol</h2>
-          <p class="alt-sub">Markanızın ihtiyaçlarına göre net, ölçülebilir ve şeffaf süreç.</p>
-        </header>
-
-        <ol class="tl">
-          <li class="tl-item">
-            <figure class="tl-media">
-              <img src="kesif-ve-analiz.png" alt="Keşif ve analiz" loading="lazy">
-            </figure>
-            <div class="tl-dot" aria-hidden="true">1</div>
-            <div class="tl-content">
-              <h3 class="tl-title">Keşif &amp; İhtiyaç Analizi</h3>
-              <p class="tl-desc">Paydaş görüşmeleri ve mevcut durum analiziyle gereksinimleri netleştirir,
-                başarı kriterleri (KPI), kapsam ve bütçe çerçevesini birlikte tanımlarız.</p>
-            </div>
-          </li>
-
-          <li class="tl-item">
-            <figure class="tl-media">
-              <img src="strateji-ve-planlama.png" alt="Strateji ve planlama" loading="lazy">
-            </figure>
-            <div class="tl-dot" aria-hidden="true">2</div>
-            <div class="tl-content">
-              <h3 class="tl-title">Strateji &amp; Yol Haritası</h3>
-              <p class="tl-desc">Hedef kitle, pozisyonlama ve kanal stratejisini belirler; bilgi mimarisi
-                ve iş kırılımını (WBS) oluşturur; riskleri ve bağımlılıkları adresleriz.</p>
-            </div>
-          </li>
-
-          <li class="tl-item">
-            <figure class="tl-media">
-              <img src="yaraticilik-ve-tasarim.png" alt="Yaratıcılık ve tasarım" loading="lazy">
-            </figure>
-            <div class="tl-dot" aria-hidden="true">3</div>
-            <div class="tl-content">
-              <h3 class="tl-title">Tasarım &amp; Prototip</h3>
-              <p class="tl-desc">Marka dilinizi güçlendiren konseptler geliştirir; düşük/orta/yüksek
-                doğrulukta prototipler üretir, iteratif revizyonlarla nihai tasarımı olgunlaştırırız.</p>
-            </div>
-          </li>
-
-          <li class="tl-item">
-            <figure class="tl-media">
-              <img src="iyilestirme-ve-bakim.png" alt="İyileştirme ve bakım" loading="lazy">
-            </figure>
-            <div class="tl-dot" aria-hidden="true">4</div>
-            <div class="tl-content">
-              <h3 class="tl-title">Geliştirme, Test &amp; Yayın</h3>
-              <p class="tl-desc">Ürün/sayfa geliştirmeyi tamamlar; fonksiyonel, performans ve
-                erişilebilirlik testleri sonrası yayına alır; ölçümleme &amp; optimizasyonu düzenli sürdürürüz.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ÇALIŞMALARIMIZ — Sade Case Study -->
-    <section id="calismalarimiz" class="case-studies" aria-labelledby="cs-title">
-      <div class="cs-container">
-        <header class="cs-head">
-          <h2 id="cs-title">Çalışmalarımız</h2>
-          <p class="cs-sub">Yürüttüğümüz bazı iş birliklerinden seçili örnekler.</p>
-        </header>
-
-        <div class="cs-list">
-          <article class="cs-card">
-            <figure class="cs-media">
-              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="Royal Canin web arayüzü">
-            </figure>
-            <div class="cs-body">
-              <span class="cs-client">Royal Canin</span>
-              <h3 class="cs-title">Kurumsal Web — Performans & Erişilebilirlik Odaklı Yenileme</h3>
-              <p class="cs-desc">Kurumsal web deneyimini erişilebilirlik, hız ve ölçeklenebilirlik odaklı yeniledik.</p>
-            </div>
-          </article>
-
-          <article class="cs-card">
-            <figure class="cs-media">
-              <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1600&auto=format&fit=crop" alt="Tuborg marka sistemi">
-            </figure>
-            <div class="cs-body">
-              <span class="cs-client">Tuborg</span>
-              <h3 class="cs-title">Modüler Marka Sistemi — Genç Kitleye Uygun Dil</h3>
-              <p class="cs-desc">Dijital ve fiziksel temas noktalarında tutarlı, esnek bir marka sistemi tasarladık.</p>
-            </div>
-          </article>
-
-          <article class="cs-card">
-            <figure class="cs-media">
-              <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=1600&auto=format&fit=crop" alt="Watsons sosyal kampanya">
-            </figure>
-            <div class="cs-body">
-              <span class="cs-client">Watsons</span>
-              <h3 class="cs-title">Performans Odaklı Sosyal Medya Kampanyası</h3>
-              <p class="cs-desc">İçerik stratejisi ve optimizasyon ile etkileşimi ve marka farkındalığını artırdık.</p>
-            </div>
-          </article>
-
-          <article class="cs-card">
-            <figure class="cs-media">
-              <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1600&auto=format&fit=crop" alt="Illy video prodüksiyon">
-            </figure>
-            <div class="cs-body">
-              <span class="cs-client">Illy</span>
-              <h3 class="cs-title">Ürün Lansmanı — Video Prodüksiyon & Post Prodüksiyon</h3>
-              <p class="cs-desc">Hikâye, çekim ve kurgu süreçleriyle etkileyici bir lansman filmi ürettik.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- İletişim anchor -->
-    <section id="iletisim" class="contact-wrap" aria-label="İletişim ve SSS">
-  <!-- Sol: Form -->
-  <div class="contact-card" role="form">
-    <h2>Bize Ulaşın</h2>
-    <p class="contact-lead">Projeniz için bize birkaç bilgi verin; en geç 24 saat içinde dönüş yapalım.</p>
-
-    <form class="form-grid" action="mailto:hello@wedocreative.net" method="post">
-      <input type="text" class="input" name="name" placeholder="Ad Soyad" aria-label="Ad Soyad" required>
-      <input type="email" class="input" name="email" placeholder="E-posta" aria-label="E-posta" required>
-      <input type="tel" class="input" name="phone" placeholder="Telefon (isteğe bağlı)" aria-label="Telefon">
-      <textarea class="textarea" name="message" placeholder="Mesajınız" aria-label="Mesajınız"></textarea>
-
-      <button type="submit" class="btn-submit">Gönder</button>
-    </form>
-  </div>
-
-  <!-- Sağ: SSS -->
-  <aside class="faq-wrap" aria-label="Sıkça Sorulan Sorular">
-    <h3>Sıkça Sorulan Sorular</h3>
-    <div class="faq">
-      <details>
-        <summary>Ortalama teslim süreniz nedir?</summary>
-        <div class="answer">
-          Proje kapsamına göre değişir; çoğu tasarım işi 5–10 iş günü, web projeleri 3–6 hafta aralığındadır.
-        </div>
-      </details>
-
-      <details>
-        <summary>Revizyon hakkı var mı?</summary>
-        <div class="answer">Evet, tüm paketlerde en az 2 tur revizyon standarttır. İhtiyaca göre esnetilebilir.</div>
-      </details>
-
-      <details>
-        <summary>Çalışma şekliniz nasıl?</summary>
-        <div class="answer">Keşif & hedefler → tasarım/prototip → üretim → test & yayına alma → ölçümleme & optimizasyon.</div>
-      </details>
-
-      <details>
-        <summary>Fiyatlandırma nasıl yapılıyor?</summary>
-        <div class="answer">Sabit paket + kapsam dışı kalemler için saatlik/dilimli fiyatlandırma uygularız.</div>
-      </details>
+      <ol class="tl">
+        <li class="tl-item">
+          <figure class="tl-media"><img src="kesif-ve-analiz.png" alt="Keşif ve analiz"></figure>
+          <div class="tl-dot">1</div>
+          <div class="tl-content">
+            <h3 class="tl-title">Keşif &amp; Analiz</h3>
+            <p class="tl-desc">İhtiyaç ve hedefleri belirleyip, kapsam ve bütçeyi tanımlarız.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <figure class="tl-media"><img src="strateji-ve-planlama.png" alt="Strateji ve planlama"></figure>
+          <div class="tl-dot">2</div>
+          <div class="tl-content">
+            <h3 class="tl-title">Strateji &amp; Yol Haritası</h3>
+            <p class="tl-desc">Hedef kitle, pozisyonlama ve kanal stratejisini belirleriz.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <figure class="tl-media"><img src="yaraticilik-ve-tasarim.png" alt="Yaratıcılık ve tasarım"></figure>
+          <div class="tl-dot">3</div>
+          <div class="tl-content">
+            <h3 class="tl-title">Tasarım &amp; Prototip</h3>
+            <p class="tl-desc">Yaratıcı konseptleri geliştirip, prototipler oluştururuz.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <figure class="tl-media"><img src="iyilestirme-ve-bakim.png" alt="İyileştirme ve bakım"></figure>
+          <div class="tl-dot">4</div>
+          <div class="tl-content">
+            <h3 class="tl-title">Geliştirme &amp; Yayın</h3>
+            <p class="tl-desc">Ürün/sayfa geliştirmeyi tamamlayıp test sonrası yayına alırız.</p>
+          </div>
+        </li>
+      </ol>
     </div>
-  </aside>
-</section>
+  </section>
 
+  <!-- ÇALIŞMALAR -->
+  <section id="calismalarimiz" class="case-studies" aria-labelledby="cs-title">
+    <div class="cs-container">
+      <header class="cs-head">
+        <h2 id="cs-title">Çalışmalarımız</h2>
+        <p class="cs-sub">Seçili iş birliklerimizden örnekler.</p>
+      </header>
+      <div class="cs-list">
+        <article class="cs-card">
+          <figure class="cs-media"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600" alt=""></figure>
+          <div class="cs-body"><span class="cs-client">Royal Canin</span><h3 class="cs-title">Kurumsal Web Yenileme</h3></div>
+        </article>
+        <article class="cs-card">
+          <figure class="cs-media"><img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1600" alt=""></figure>
+          <div class="cs-body"><span class="cs-client">Tuborg</span><h3 class="cs-title">Modüler Marka Sistemi</h3></div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- İLETİŞİM -->
+  <section id="iletisim" class="contact-wrap">
+    <div class="contact-card">
+      <h2>Bize Ulaşın</h2>
+      <p class="contact-lead">Projeniz hakkında bize kısa bilgi verin; 24 saat içinde dönüş yapalım.</p>
+      <form class="form-grid" action="mailto:hello@wedocreative.net" method="post">
+        <input type="text" class="input" name="name" placeholder="Ad Soyad" required>
+        <input type="email" class="input" name="email" placeholder="E-posta" required>
+        <textarea class="textarea" name="message" placeholder="Mesajınız"></textarea>
+        <button type="submit" class="btn-submit">Gönder</button>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer" aria-labelledby="footer-title">
+  <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-top">
         <div class="f-brand">
           <img src="footer-logo.png" alt="Wedo Creative" class="footer-logo" />
-          <h2 id="footer-title" class="sr-only" style="position:absolute;left:-9999px;">Wedo Creative</h2>
-          <p class="f-copy">
-            We’re a team of strategic creator and digital innovator, united focus in our
-            pursuit of mastery and joyful.
-          </p>
-        </div>
-
-        <nav class="f-nav" aria-label="Sayfalar">
-          <h3>Sayfalar</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#hakkimizda">Biz Kimiz</a></li>
-            <li><a href="#process">Çalışmalarımız</a></li>
-            <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
-            <li><a href="#referanslar">Referanslarımız</a></li>
-          </ul>
-        </nav>
-
-        <div class="f-contact">
-          <h3>Bize ulaş</h3>
-          <form class="f-form" action="mailto:hello@wedocreative.net" method="post">
-            <input type="email" name="email" placeholder="mail@ornek.com" aria-label="E-posta adresiniz" required>
-            <button type="submit" class="chip-btn">Mail gönder</button>
-          </form>
-
-          <div class="f-social" aria-label="Sosyal medya">
-            <a href="#" aria-label="Behance" class="si" title="Behance">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.5 7.5h4.1a3.1 3.1 0 1 1 0 6.2H4.5V7.5Zm2 1.8v2.6h2a1.3 1.3 0 1 0 0-2.6H6.5Zm10.4-1.8a.7.7 0 1 1 0 1.4h-3.2a.7.7 0 1 1 0-1.4h3.2Zm-4.5 3.1c.4-1.4 1.6-2.3 3.2-2.3 2 0 3.3 1.3 3.3 3.5v.3h-4.9c.1.9.8 1.5 2 1.5.8 0 1.3-.2 1.9-.7l.8 1.3c-.7.6-1.6 1-2.8 1-2.3 0-3.8-1.4-3.8-3.5 0-.4 0-.8.3-1.1ZM15 11h3.1c-.1-.8-.6-1.3-1.5-1.3S15.2 10.2 15 11Z"/></svg>
-            </a>
-            <a href="#" aria-label="Instagram" class="si" title="Instagram">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7Zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm4-2.2a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="si" title="LinkedIn">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8.5h4.9V24H.5V8.5ZM9 8.5h4.7v2.1h.1c.7-1.3 2.3-2.7 4.7-2.7 5 0 5.9 3.3 5.9 7.6V24h-4.9v-6.9c0-1.7 0-3.9-2.4-3.9s-2.7 1.9-2.7 3.8V24H9V8.5Z"/></svg>
-            </a>
-          </div>
+          <p class="f-copy">We’re a team of strategic creators and digital innovators.</p>
         </div>
       </div>
-
-      <hr class="f-sep" aria-hidden="true" />
-
+      <hr class="f-sep">
       <div class="footer-bottom">
-        <div class="f-mini">
-          <span class="f-muted">Copyright by</span>
-          <a href="#" class="f-site">Wedocreative.net</a>
-        </div>
-        <div class="f-mini">
-          <span class="f-muted">Bize Ulaşın</span>
-          <a href="tel:+905413095887">+90 541 309 58 87</a>
-        </div>
-        <div class="f-mini">
-          <span class="f-muted">Adres</span>
-          <address>Ferhatpaşa mahallesi 1. Sokak no:22/1<br>Ataşehir İstanbul</address>
-        </div>
+        <div class="f-mini"><span class="f-muted">Copyright by</span> <a href="#" class="f-site">Wedocreative.net</a></div>
+        <div class="f-mini"><span class="f-muted">Telefon</span> <a href="tel:+905413095887">+90 541 309 58 87</a></div>
+        <div class="f-mini"><span class="f-muted">Adres</span> <address>Ferhatpaşa, Ataşehir / İstanbul</address></div>
       </div>
     </div>
   </footer>
 
-  <!-- JS: Scroll reveal + navbar shadow + progress bar -->
+  <!-- JS -->
   <script>
-    // Navbar shadow on scroll
     (function(){
-      const nav = document.querySelector('.navbar');
-      const onScroll = ()=> nav.classList.toggle('scrolled', window.scrollY > 30);
+      const nav=document.querySelector('.navbar');
+      const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>30);
       onScroll();
-      window.addEventListener('scroll', onScroll, { passive: true });
-    })();
-
-    // Reveal utility (hizmet kartları & hero)
-    (function () {
-      const revealEls = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window)) { revealEls.forEach(el=>el.classList.add('visible')); return; }
-      const io = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{
-          if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
-        });
-      }, { threshold: 0.2 });
-      revealEls.forEach(el=>io.observe(el));
-    })();
-
-    // Timeline reveal
-    (function () {
-      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var items = document.querySelectorAll('.tl-item');
-      if (reduce || !('IntersectionObserver' in window)) {
-        items.forEach(function(el){ el.classList.add('is-in'); }); return;
-      }
-      var io = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
-        });
-      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
-      items.forEach(function(el){ io.observe(el); });
-    })();
-
-    // Case study reveal
-    (function(){
-      const cards = document.querySelectorAll('.cs-card');
-      if (!('IntersectionObserver' in window)) { cards.forEach(c=>c.classList.add('is-in')); return; }
-      const io = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{
-          if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
-        });
-      },{threshold:0.12});
-      cards.forEach(c=>io.observe(c));
-    })();
-
-    // Progress bar
-    (function(){
-      var bar = document.getElementById('progressbar');
-      if (!bar) return;
-      function onScroll(){
-        var h = document.documentElement;
-        var max = h.scrollHeight - h.clientHeight;
-        var scrolled = max > 0 ? (h.scrollTop / max) * 100 : 0;
-        bar.style.width = scrolled + '%';
-      }
-      onScroll();
-      window.addEventListener('scroll', onScroll, { passive: true });
-      window.addEventListener('resize', onScroll);
+      window.addEventListener('scroll',onScroll,{passive:true});
     })();
   </script>
 </body>
