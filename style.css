@@ -67,3 +67,101 @@ img{ max-width:100%; display:block; }
 
 /* Diğer bölümler (hero, hizmetler, timeline, footer vb.) 
    ... önceki CSS kodların tamamı burada aynı kalabilir ... */
+/* === CTA STRIP FIX === */
+.cta-strip.pro {
+  position: relative;
+  isolation: isolate;
+  padding: 80px 16px 100px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(100deg,#6B3CE9 0%, #b455b9 40%, #f07b67 85%, #f77c3b 100%);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cta-strip.pro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,.15), transparent 70%);
+  mix-blend-mode: overlay;
+  opacity: .3;
+}
+
+.cta-pro-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-title {
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.cta-title span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.cta-sub {
+  opacity: .9;
+  margin-bottom: 26px;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #111;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 12px 22px;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(0,0,0,.18);
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.cta-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: .9;
+}
+
+.cta-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.cta-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  opacity: .95;
+}
+
+.cta-badges li {
+  list-style: none;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.25);
+  padding: 6px 12px;
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(3px);
+}
