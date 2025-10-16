@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -197,7 +198,7 @@
       </div>
     </section>
 
-    <!-- CASE STUDIES (kısa) -->
+    <!-- ÇALIŞMALARIMIZ — Sade Case Study -->
     <section id="calismalarimiz" class="case-studies" aria-labelledby="cs-title">
       <div class="cs-container">
         <header class="cs-head">
@@ -253,49 +254,49 @@
       </div>
     </section>
 
-    <!-- GALERİ (preview 6 adet) -->
+    <!-- ÇALIŞMALARIMIZ / GALERİ -->
     <section class="gallery-section" id="galeri" aria-label="Yaptığımız İşler">
-      <h2>Yaptığımız İşlerden Bazıları</h2>
-      <p>Markalara özel ürettiğimiz yaratıcı işlerimizden seçkiler.</p>
+  <h2>Yaptığımız İşlerden Bazıları</h2>
+  <p>Markalara özel ürettiğimiz yaratıcı işlerimizden seçkiler.</p>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <img src="galeri/royal-canin.jpg" alt="Royal Canin tabela uygulaması" data-full="galeri/royal-canin.jpg">
-          <figcaption class="gallery-caption">Royal Canin – Tabela Uygulaması</figcaption>
-        </figure>
+  <div class="gallery-grid">
+    <figure class="gallery-item">
+      <img src="galeri/royal-canin.jpg" alt="Royal Canin tabela uygulaması" data-full="galeri/royal-canin.jpg">
+      <figcaption class="gallery-caption">Royal Canin – Tabela Uygulaması</figcaption>
+    </figure>
 
-        <figure class="gallery-item">
-          <img src="galeri/tuborg-stand.jpg" alt="Tuborg fuar stand tasarımı" data-full="galeri/tuborg-stand.jpg">
-          <figcaption class="gallery-caption">Tuborg – Fuar Stand Tasarımı</figcaption>
-        </figure>
+    <figure class="gallery-item">
+      <img src="galeri/tuborg-stand.jpg" alt="Tuborg fuar stand tasarımı" data-full="galeri/tuborg-stand.jpg">
+      <figcaption class="gallery-caption">Tuborg – Fuar Stand Tasarımı</figcaption>
+    </figure>
 
-        <figure class="gallery-item">
-          <img src="galeri/watsons-vitrin.jpg" alt="Watsons vitrin görsel tasarımı" data-full="galeri/watsons-vitrin.jpg">
-          <figcaption class="gallery-caption">Watsons – Vitrin Görsel Tasarımı</figcaption>
-        </figure>
+    <figure class="gallery-item">
+      <img src="galeri/watsons-vitrin.jpg" alt="Watsons vitrin görsel tasarımı" data-full="galeri/watsons-vitrin.jpg">
+      <figcaption class="gallery-caption">Watsons – Vitrin Görsel Tasarımı</figcaption>
+    </figure>
 
-        <figure class="gallery-item">
-          <img src="galeri/royal-canin-arac.jpg" alt="Royal Canin araç giydirme" data-full="galeri/royal-canin-arac.jpg">
-          <figcaption class="gallery-caption">Royal Canin – Araç Giydirme</figcaption>
-        </figure>
+    <figure class="gallery-item">
+      <img src="galeri/royal-canin-arac.jpg" alt="Royal Canin araç giydirme" data-full="galeri/royal-canin-arac.jpg">
+      <figcaption class="gallery-caption">Royal Canin – Araç Giydirme</figcaption>
+    </figure>
 
-        <figure class="gallery-item">
-          <img src="galeri/redbull-dijital.jpg" alt="Red Bull dijital kampanya" data-full="galeri/redbull-dijital.jpg">
-          <figcaption class="gallery-caption">Red Bull – Dijital Kampanya</figcaption>
-        </figure>
+    <figure class="gallery-item">
+      <img src="galeri/redbull-dijital.jpg" alt="Red Bull dijital kampanya" data-full="galeri/redbull-dijital.jpg">
+      <figcaption class="gallery-caption">Red Bull – Dijital Kampanya</figcaption>
+    </figure>
 
-        <figure class="gallery-item">
-          <img src="galeri/duo-bar.jpg" alt="Duo Bar neon uygulaması" data-full="galeri/duo-bar.jpg">
-          <figcaption class="gallery-caption">Duo Bar – Neon Uygulaması</figcaption>
-        </figure>
-      </div>
+    <figure class="gallery-item">
+      <img src="galeri/duo-bar.jpg" alt="Duo Bar neon uygulaması" data-full="galeri/duo-bar.jpg">
+      <figcaption class="gallery-caption">Duo Bar – Neon Uygulaması</figcaption>
+    </figure>
+  </div>
 
-      <div class="gallery-actions">
-        <a class="btn-outline" href="gallery.html">Tüm Çalışmaları Gör</a>
-      </div>
-    </section>
+  <div class="gallery-actions">
+    <a class="btn-outline" href="gallery.html">Tüm Çalışmaları Gör</a>
+  </div>
+</section>
 
-    <!-- İLETİŞİM -->
+    <!-- İletişim -->
     <section id="iletisim" class="contact-wrap" aria-label="İletişim ve SSS">
       <div class="contact-card" role="form">
         <h2>Bize Ulaşın</h2>
@@ -402,7 +403,7 @@
     </div>
   </footer>
 
-  <!-- JS -->
+  <!-- JS: Scroll reveal + navbar shadow + progress bar -->
   <script>
     // Navbar shadow on scroll
     (function(){
@@ -412,7 +413,7 @@
       window.addEventListener('scroll', onScroll, { passive: true });
     })();
 
-    // Reveal utility
+    // Reveal utility (hizmet kartları & hero)
     (function () {
       const revealEls = document.querySelectorAll('.reveal');
       if (!('IntersectionObserver' in window)) { revealEls.forEach(el=>el.classList.add('visible')); return; }

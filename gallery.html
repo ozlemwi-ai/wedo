@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeri — Wedo Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR (istersen index’ten aynen kopyala) -->
+  <header class="navbar">
+    <a href="index.html" class="logo" aria-label="Wedo Creative">
+      <img src="logo.png" alt="Wedo Creative">
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html#">Home</a></li>
+        <li><a href="index.html#hizmetlerimiz">Hizmetlerimiz</a></li>
+        <li><a href="index.html#referanslar">Referanslarımız</a></li>
+        <li><a href="gallery.html" aria-current="page">Galeri</a></li>
+        <li class="only-mobile"><a class="btn-primary" href="index.html#iletisim">Bize Ulaşın</a></li>
+      </ul>
+    </nav>
+    <a href="index.html#iletisim" class="btn-primary cta only-desktop">Bize Ulaşın</a>
+  </header>
+
+  <main class="gallery-page" id="icerik">
+    <h1>Galeri</h1>
+    <p class="sub">Yaptığımız işlerden daha fazla örnek.</p>
+
+    <div class="gallery-grid" id="grid">
+      <!-- ÖRNEKLER: istediğin kadar çoğalt -->
+      <figure class="gallery-item">
+        <img src="galeri/royal-canin.jpg" alt="Royal Canin tabela" data-full="galeri/royal-canin.jpg">
+        <figcaption class="gallery-caption">Royal Canin – Tabela</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="galeri/tuborg-stand.jpg" alt="Tuborg stand" data-full="galeri/tuborg-stand.jpg">
+        <figcaption class="gallery-caption">Tuborg – Stand</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="galeri/watsons-vitrin.jpg" alt="Watsons vitrin" data-full="galeri/watsons-vitrin.jpg">
+        <figcaption class="gallery-caption">Watsons – Vitrin</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="galeri/royal-canin-arac.jpg" alt="Royal Canin araç" data-full="galeri/royal-canin-arac.jpg">
+        <figcaption class="gallery-caption">Royal Canin – Araç Giydirme</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="galeri/redbull-dijital.jpg" alt="Red Bull dijital" data-full="galeri/redbull-dijital.jpg">
+        <figcaption class="gallery-caption">Red Bull – Dijital</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="galeri/duo-bar.jpg" alt="Duo Bar" data-full="galeri/duo-bar.jpg">
+        <figcaption class="gallery-caption">Duo Bar – Neon</figcaption>
+      </figure>
+
+      <!-- ↓↓↓ yeni görselleri böyle ekle -->
+      <!--
+      <figure class="gallery-item">
+        <img src="galeri/yeni-1.jpg" alt="Açıklama" data-full="galeri/yeni-1.jpg">
+        <figcaption class="gallery-caption">Açıklama</figcaption>
+      </figure>
+      -->
+    </div>
+  </main>
+
+  <!-- LIGHTBOX HTML -->
+  <div id="lightbox" aria-hidden="true">
+    <img class="lightbox-img" alt="">
+    <button class="lightbox-close" aria-label="Kapat">✕</button>
+    <button class="lightbox-prev" aria-label="Önceki">❮</button>
+    <button class="lightbox-next" aria-label="Sonraki">❯</button>
+  </div>
+
+  <!-- FOOTER’i index’ten kopyalayabilirsin -->
+
+  <!-- LIGHTBOX JS (hem index hem gallery’de çalışır) -->
+  <script>
+    (function(){
+      const lb = document.getElementById('lightbox');
+      if(!lb) return;
+      const imgEl = lb.querySelector('.lightbox-img');
+      const closeBtn = lb.querySelector('.lightbox-close');
+      const prevBtn = lb.querySelector('.lightbox-prev');
+      const nextBtn = lb.querySelector('.lightbox-next');
+
+      // tıklanabilir tüm görseller
+      const thumbs = Array.from(document.querySelectorAll('.gallery-item img'));
+      let i = -1;
+
+      function open(idx){
+        i = idx;
+        const src = thumbs[i].dataset.full || thumbs[i].src;
+        imgEl.src = src;
+        lb.classList.add('is-open');
+        lb.setAttribute('aria-hidden','false');
+      }
+      function close(){
+        lb.classList.remove('is-open');
+        lb.setAttribute('aria-hidden','true');
+        imgEl.src = '';
+      }
+      function prev(){ if(i>0) open(i-1); }
+      function next(){ if(i<thumbs.length-1) open(i+1); }
+
+      thumbs.forEach((t,idx)=> t.addEventListener('click', ()=>open(idx)));
+      closeBtn.addEventListener('click', close);
+      prevBtn.addEventListener('click', prev);
+      nextBtn.addEventListener('click', next);
+      lb.addEventListener('click', (e)=>{ if(e.target===lb) close(); });
+      window.addEventListener('keydown', (e)=>{
+        if(!lb.classList.contains('is-open')) return;
+        if(e.key==='Escape') close();
+        if(e.key==='ArrowLeft') prev();
+        if(e.key==='ArrowRight') next();
+      });
+    })();
+  </script>
+</body>
+</html>
