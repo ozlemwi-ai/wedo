@@ -32,7 +32,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
         <li><a href="#referanslar">Referanslarımız</a></li>
-        <li><a href="#process">Çalışmalarımız</a></li>
+        <li><a href="#galeri">Çalışmalarımız</a></li>
         <li class="only-mobile"><a class="btn-primary" href="#iletisim">Bize Ulaşın</a></li>
       </ul>
     </nav>
@@ -63,13 +63,11 @@
       </div>
     </section>
 
-    <!-- (CTA bölümü kaldırıldı) -->
-
     <!-- REFERANSLAR -->
     <section class="references" id="referanslar" aria-label="Referanslarımız">
       <h2>Referanslarımız</h2>
       <div class="logos">
-        <div class="logos-track">
+        <div class="logos-track" aria-hidden="true">
           <img src="Royal-Canin-Logo.svg" alt="Royal Canin">
           <img src="Tuborg-Logo.png" alt="Tuborg">
           <img src="watsons-logo.png" alt="Watsons">
@@ -256,50 +254,42 @@
       </div>
     </section>
 
-    <!-- İletişim -->
-    <section id="iletisim" class="contact-wrap" aria-label="İletişim ve SSS">
-      <!-- Sol: Form -->
-      <div class="contact-card" role="form">
-        <h2>Bize Ulaşın</h2>
-        <p class="contact-lead">Projeniz için bize birkaç bilgi verin; en geç 24 saat içinde dönüş yapalım.</p>
+    <!-- YAPTIĞIMIZ İŞLER / ÇALIŞMALARIMIZ (Galeri) -->
+    <section class="gallery-section" id="galeri" aria-label="Yaptığımız İşler">
+      <h2>Yaptığımız İşlerden Bazıları</h2>
+      <p>Markalara özel ürettiğimiz yaratıcı işlerimizden seçkiler.</p>
 
-        <form class="form-grid" action="mailto:hello@wedocreative.net" method="post">
-          <input type="text" class="input" name="name" placeholder="Ad Soyad" aria-label="Ad Soyad" required>
-          <input type="email" class="input" name="email" placeholder="E-posta" aria-label="E-posta" required>
-          <input type="tel" class="input" name="phone" placeholder="Telefon (isteğe bağlı)" aria-label="Telefon">
-          <textarea class="textarea" name="message" placeholder="Mesajınız" aria-label="Mesajınız"></textarea>
-
-          <button type="submit" class="btn-submit">Gönder</button>
-        </form>
-      </div>
-
-      <!-- Sağ: SSS -->
-      <aside class="faq-wrap" aria-label="Sıkça Sorulan Sorular">
-        <h3>Sıkça Sorulan Sorular</h3>
-        <div class="faq">
-          <details>
-            <summary>Ortalama teslim süreniz nedir?</summary>
-            <div class="answer">
-              Proje kapsamına göre değişir; çoğu tasarım işi 5–10 iş günü, web projeleri 3–6 hafta aralığındadır.
-            </div>
-          </details>
-
-          <details>
-            <summary>Revizyon hakkı var mı?</summary>
-            <div class="answer">Evet, tüm paketlerde en az 2 tur revizyon standarttır. İhtiyaca göre esnetilebilir.</div>
-          </details>
-
-          <details>
-            <summary>Çalışma şekliniz nasıl?</summary>
-            <div class="answer">Keşif & hedefler → tasarım/prototip → üretim → test & yayına alma → ölçümleme & optimizasyon.</div>
-          </details>
-
-          <details>
-            <summary>Fiyatlandırma nasıl yapılıyor?</summary>
-            <div class="answer">Sabit paket + kapsam dışı kalemler için saatlik/dilimli fiyatlandırma uygularız.</div>
-          </details>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="calisma1.jpg" alt="Royal Canin tabela uygulaması">
+          <div class="gallery-caption">Royal Canin - Tabela Uygulaması</div>
         </div>
-      </aside>
+
+        <div class="gallery-item">
+          <img src="calisma2.jpg" alt="Tuborg fuar stand tasarımı">
+          <div class="gallery-caption">Tuborg - Fuar Stand Tasarımı</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="calisma3.jpg" alt="Watsons vitrin görsel tasarımı">
+          <div class="gallery-caption">Watsons - Vitrin Görsel Tasarımı</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="calisma4.jpg" alt="Illy lansman afişi">
+          <div class="gallery-caption">Illy - Lansman Afişi</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="calisma5.jpg" alt="Dardanel araç giydirme">
+          <div class="gallery-caption">Dardanel - Araç Giydirme</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="calisma6.jpg" alt="Red Bull dijital kampanya">
+          <div class="gallery-caption">Red Bull - Dijital Kampanya</div>
+        </div>
+      </div>
     </section>
 
   </main>
